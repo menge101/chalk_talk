@@ -1,21 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { ProfileScreen } from './src/screens/profile/Profile.js'
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <ProfileScreen
+        hashName='Kunt-Fu Weasel'
+        motherKennel='Pittsburgh Hash House Harriers'
+        pic={require('./src/screens/profile/pic.jpg')}
+      />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
