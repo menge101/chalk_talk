@@ -1,0 +1,19 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "chalktalk-develop-20190513104248-authRole",
+            "UnauthRoleArn": "arn:aws:iam::347157418948:role/chalktalk-develop-20190513104248-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::347157418948:role/chalktalk-develop-20190513104248-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "chalktalk-develop-20190513104248-deployment",
+            "UnauthRoleName": "chalktalk-develop-20190513104248-unauthRole",
+            "StackName": "chalktalk-develop-20190513104248",
+            "StackId": "arn:aws:cloudformation:us-east-1:347157418948:stack/chalktalk-develop-20190513104248/60dc2730-758d-11e9-9b40-0a9ef6cbb06a"
+        },
+        "categories": {
+            "auth": {
+                "cognito24d698a0": {}
+            }
+        }
+    }
+}

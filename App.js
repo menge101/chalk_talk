@@ -1,6 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { ProfileScreen } from './src/screens/profile/Profile.js'
+
+import Amplify from '@aws-amplify/core'
+import config from './aws-exports'
+Amplify.configure(config);
 
 export default class App extends React.Component {
   render() {
