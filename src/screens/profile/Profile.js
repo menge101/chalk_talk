@@ -1,10 +1,24 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { Avatar } from 'react-native-elements';
+import { Avatar, Button } from 'react-native-elements';
 import PropTypes from 'prop-types'
 
 
 export class ProfileScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Profile',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+    headerRight: (
+        <Button
+            onPress={() => alert('This is a button!')}
+            title="Info"
+            color="#fff"
+        />
+    ),
+  };
+
   render() {
     let default_props = { size: styles.image.height, style: styles.image};
     let avatar = ((null != this.props.pic) ?
@@ -27,7 +41,7 @@ export class ProfileScreen extends React.Component {
 ProfileScreen.propTypes = {
   pic: PropTypes.number,
   hashName: PropTypes.string.isRequired,
-  motherKennel: PropTypes.string.isRequired
+  motherKennel: PropTypes.string.isRequired,
 };
 
 ProfileScreen.defaultProps = {
